@@ -2,7 +2,7 @@
 title: 0Katz Blog
 description: 'Just another Ethical Hacker sharing his notes.'
 #url: 'https://laykatz.github.io'
-baseurl: '/blog'
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
