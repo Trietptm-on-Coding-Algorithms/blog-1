@@ -1,0 +1,44 @@
+# Site settings
+title: 0Katz Blog
+description: 'Just another Ethical Hacker sharing his notes.'
+#url: ''
+baseurl: '/blog'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Katz'
+  twitter_username: 0katz
+  github_username:  laykatz
+  #email: 0katz@twitter.com
+  #facebook_username: SimpleSec
+  #github_username:  laykatz
+  #linkedin_username:  none
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
